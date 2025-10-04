@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="middle">Middle Name:</label>
+            <input type="text" id="middle" name="middle" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="suffix">Suffix:</label>
+            <select id="suffix" name="suffix" required>
+                <option value="none">
+                    None
+                </option>
+                <option value="junior">
+                    Jr.
+                </option>
+                <option value="senior">
+                    Sr.
+                </option>
+                <option value="ii">
+                    II.
+                </option>
+                <option value="iii">
+                    III.
+                </option>
+                <option value="ph.d">
+                    Ph.D.
+                </option>
+                <option value="md">
+                    M.D.
+                </option>
+                <option value="esq">
+                    Esq.
+                </option>
+                <option value="dd">
+                    D.D.
+                </option>
+                <option value="cpa">
+                    C.P.A.
+                </option>
+                <option value="rn">
+                    R.N.
+                </option>
+            </select>
+
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="12" required />
+
+            <label for="idnumber">Id Number:</label>
+            <input  type="text" name="idnumber" 
+                    pattern="^DIET-\d{4}-\d{2}-\d{3}$" 
+                    title="Format: DIET-YYYY-BB-NNN (e.g., DIET-2022-32-419)" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                   title="Password must contain at least one number, 
+                           one alphabet, one symbol, and be at 
+                           least 8 characters long" required />
+
+            <label for="repassword">Re-type Password:</label>
+            <input type="password" id="repassword" name="repassword" required />
+
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+            <label for="gender">Gender:</label>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <select id="gender" name="gender" required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+
+            <button type="submit">
+                Submit
+            </button>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+        </form>
+    </div>
+</body>
+
+</html>
